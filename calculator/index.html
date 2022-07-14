@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="screen">
+        <input type="text" class="cals-num" placeholder="0" />
+      </div>
+      <div class="numberss">
+        <div class="del">
+          <button class="dell" value="DEL">DEL</button>
+          <button class="reset" value="RESET">RESET</button>
+        </div>
+        <div class="numbers">
+          <button class="number" value="9" onclick="calc('9')">9</button>
+          <button class="number" value="8" onclick="calc('8')">8</button>
+          <button class="number" value="7" onclick="calc('7')">7</button>
+          <button class="number" value="6" onclick="calc('6')">6</button>
+          <button class="number" value="5" onclick="calc('5')">5</button>
+          <button class="number" value="4" onclick="calc('4')">4</button>
+          <button class="number" value="3" onclick="calc('3')">3</button>
+          <button class="number" value="2" onclick="calc('2')">2</button>
+          <button class="number" value="1" onclick="calc('1')">1</button>
+          <button class="number" value="0" onclick="calc('0')">0</button>
+          <button class="number" value="." onclick="calc('.')">.</button>
+          <button class="ops" value="=" onclick="Solve()">=</button>
+        </div>
+        <div class="op">
+          <button class="ops" value="/" onclick="calc('/')">/</button>
+          <button class="ops" value="*" onclick="calc('*')">*</button>
+          <button class="ops" value="+" onclick="calc('+')">+</button>
+          <button class="ops" value="-" onclick="calc('-')">-</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
