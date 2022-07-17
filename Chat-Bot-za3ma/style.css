@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+}
+body {
+  background: #1a5ce0ee;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background: #fff;
+  box-shadow: 0 0 20px #666;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input input {
+  width: 70%;
+  height: 100%;
+  padding: 0 20px;
+  outline: none;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+}
+
+.input input::placeholder {
+  color: #777;
+  letter-spacing: 1.2px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.input button {
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+  background-color: #1a5ce0ee;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.input button:hover {
+  background: #1a5ce075;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.output span {
+  color: #888;
+  font-size: 20px;
+  margin: 5px 0;
+  letter-spacing: 1.2px;
+  position: relative;
+}
+
+.output span::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #999;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.output p {
+  margin: 10px 0;
+  letter-spacing: 1.2px;
+}
+
+.system {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 150px;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.system p {
+  font-size: 2rem;
+  color: red;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
